@@ -9,16 +9,16 @@ import javax.persistence.NamedQuery;
 
 @Entity
 @NamedQueries({
-        @NamedQuery(name = "findUserById", query = "SELECT u FROM UserPersistence u WHERE u.login = :login")
+        @NamedQuery(name = "findUserByLogin", query = "SELECT u FROM User u WHERE u.login = :login")
 })
 @Table(name = "Users")
-public class UserPersistence {
+public class User {
     private static final long serialVersionUID = 1L;
     private String login;
     private String password;
 
-    public UserPersistence(){}
-    public UserPersistence(String login, String password){
+    public User(){}
+    public User(String login, String password){
         this.login = login;
         this.password = password;
     }
