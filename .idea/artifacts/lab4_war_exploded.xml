@@ -8,8 +8,8 @@
           <element id="module-output" name="lab4" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="JPA 2.0-JPA 2.0" />
-          <element id="library" level="project" name="Java EE 6-Java EE 6" />
+          <element id="library" level="project" name="lib" />
+          <element id="library" level="project" name="org.eclipse.persistence:eclipselink:2.5.2" />
         </element>
       </element>
     </root>
