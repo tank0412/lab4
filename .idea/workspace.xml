@@ -7,81 +7,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="958ef19c-a309-49ae-9337-0d1d45e9ddfc" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/org_eclipse_persistence_eclipselink_2_5_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/lib/commonj.sdo-2.1.1.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/lib/eclipselink-2.5.2.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/lib/org.eclipse.persistence.jpa-2.5.0.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/classes/META-INF/persistence.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/classes/pip/lab4/ejb/RegisterEJB.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/classes/pip/lab4/ejb/UserEJB.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/classes/pip/lab4/orm/Group.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/classes/pip/lab4/orm/User.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/classes/pip/lab4/orm/UserEntity.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/classes/pip/lab4/routes/Authentication.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/classes/pip/lab4/utils/AuthenticationUtils.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/FastInfoset-1.2.12.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/activation-1.1.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/asm-3.3.1.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/commonj.sdo-2.1.1.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/comresrcgen-1.0.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/eclipselink-2.5.2.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/grizzly-servlet-webserver-1.9.45.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/jackson-core-asl-1.9.2.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/jackson-jaxrs-1.9.2.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/jackson-mapper-asl-1.9.2.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/jackson-xc-1.9.2.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/javax.annotation.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/javax.jms.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/javax.persistence-2.1.0-sources.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/javax.persistence-2.1.0.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/javax.persistence.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/javax.resource.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/javax.servlet.jsp.jstl.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/javax.transaction.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/jaxb-api-2.1.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/jaxb-impl-2.2.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/jaxb-xjc-2.2.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/jdom-1.0.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/jersey-bundle-1.12.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/jersey-bundle-1.17.1.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/jersey-client-1.12.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/jersey-core-1.12.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/jersey-grizzly-1.12.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/jersey-multipart-1.12.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/jettison-1.1.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/localizer-1.0.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/mail-1.4.4.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/mimepull-1.3.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/org.eclipse.persistence.jpa-2.5.0.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/persistence-api-1.0.2.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/rome-1.0.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/stax-api-1.0-2.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/wadl-cmdline-1.1.2.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/lib/wadl-core-1.1.2.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/lab4/META-INF/persistence.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/lab4/pip/lab4/ejb/RegisterEJB.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/lab4/pip/lab4/ejb/UserEJB.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/lab4/pip/lab4/orm/Group.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/lab4/pip/lab4/orm/User.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/lab4/pip/lab4/orm/UserEntity.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/lab4/pip/lab4/routes/ApplicationConfig.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/lab4/pip/lab4/routes/Authentication.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/lab4/pip/lab4/routes/HelloWorldResource.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/lab4/pip/lab4/utils/AuthenticationUtils.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/pip/lab4/ejb/RegisterEJB.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/pip/lab4/orm/Group.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/pip/lab4/orm/UserEntity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/pip/lab4/routes/Authentication.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/lab4_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/lab4_war_exploded.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/JPA_2_0_JPA_2_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jax_rs_jersey_1_12.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/lab4.iml" afterPath="$PROJECT_DIR$/lab4.iml" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/classes/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/classes/META-INF/persistence.xml" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/classes/pip/lab4/routes/ApplicationConfig.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/classes/pip/lab4/routes/Authentication.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/classes/pip/lab4/routes/HelloWorldResource.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/classes/pip/lab4/utils/AuthenticationUtils.class" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/classes/pip/lab4/utils/AuthenticationUtils.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/lab4_war_exploded/WEB-INF/web.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab4/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/out/production/lab4/META-INF/persistence.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab4/pip/lab4/routes/ApplicationConfig.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab4/pip/lab4/routes/Authentication.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab4/pip/lab4/routes/HelloWorldResource.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab4/pip/lab4/utils/AuthenticationUtils.class" afterPath="$PROJECT_DIR$/out/production/lab4/pip/lab4/utils/AuthenticationUtils.class" />
       <change beforePath="$PROJECT_DIR$/src/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/src/META-INF/persistence.xml" />
-      <change beforePath="$PROJECT_DIR$/src/pip/lab4/ejb/UserEJB.java" afterPath="$PROJECT_DIR$/src/pip/lab4/ejb/UserEJB.java" />
-      <change beforePath="$PROJECT_DIR$/src/pip/lab4/orm/User.java" afterPath="$PROJECT_DIR$/src/pip/lab4/orm/User.java" />
+      <change beforePath="$PROJECT_DIR$/src/pip/lab4/routes/ApplicationConfig.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/pip/lab4/routes/Authentication.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/pip/lab4/routes/HelloWorldResource.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/pip/lab4/utils/AuthenticationUtils.java" afterPath="$PROJECT_DIR$/src/pip/lab4/utils/AuthenticationUtils.java" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -105,6 +48,11 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="@helios" type="feb32156:DbDataSourceImpl" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@helios" type="feb32156:DbDataSourceImpl" />
+        <item name="S225141: schema" type="ac44c5e0:OracleImplModel$Schema" />
+      </path>
     </expand>
     <select />
   </component>
@@ -113,58 +61,41 @@
       <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+            <state relative-caret-position="321">
+              <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HelloWorldResource.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pip/lab4/routes/HelloWorldResource.java">
+      <file leaf-file-name="UserRestController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pip/lab4/controller/UserRestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="20" />
+            <state relative-caret-position="204">
+              <caret line="26" column="35" lean-forward="true" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#178#179#0" expanded="true" />
-                <element signature="e#214#215#0" expanded="true" />
+                <element signature="e#411#412#0" expanded="true" />
+                <element signature="e#447#448#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Authentication.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/pip/lab4/routes/Authentication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#161#162#0" expanded="true" />
-                <element signature="e#189#190#0" expanded="true" />
-              </folding>
+      <file leaf-file-name="user" pinned="false" current-in-tab="false">
+        <entry file="das://table:/4f44645c/610b35a8-3384-4776-b6af-e7d404ab6b65/S225141.user">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApplicationConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pip/lab4/routes/ApplicationConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="52" lean-forward="false" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="persistence.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="persistence.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="57" lean-forward="true" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
+            <state relative-caret-position="272">
+              <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -173,8 +104,8 @@
       <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pip/lab4/orm/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="272">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#867#868#0" expanded="true" />
@@ -190,32 +121,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Group.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pip/lab4/orm/Group.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#583#584#0" expanded="true" />
-                <element signature="e#611#612#0" expanded="true" />
-                <element signature="e#647#648#0" expanded="true" />
-                <element signature="e#679#680#0" expanded="true" />
-                <element signature="e#721#722#0" expanded="true" />
-                <element signature="e#755#756#0" expanded="true" />
-                <element signature="e#805#806#0" expanded="true" />
-                <element signature="e#847#848#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UserEJB.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pip/lab4/ejb/UserEJB.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-              <folding />
+              <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -235,8 +148,8 @@
       <file leaf-file-name="AuthenticationUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pip/lab4/utils/AuthenticationUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="9" column="54" lean-forward="false" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
+            <state relative-caret-position="170">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -276,15 +189,17 @@
         <option value="$PROJECT_DIR$/src/pip/lab4/HelloWorldResource.java" />
         <option value="$PROJECT_DIR$/src/pip/lab4/routes/HelloWorldResource.java" />
         <option value="$PROJECT_DIR$/src/pip/lab4/routes/ApplicationConfig.java" />
-        <option value="$PROJECT_DIR$/src/pip/lab4/utils/AuthenticationUtils.java" />
         <option value="$PROJECT_DIR$/src/pip/lab4/orm/UserPersistence.java" />
         <option value="$PROJECT_DIR$/src/pip/lab4/orm/Group.java" />
         <option value="$PROJECT_DIR$/src/pip/lab4/routes/SignUp.java" />
         <option value="$PROJECT_DIR$/src/pip/lab4/ejb/RegisterEJB.java" />
         <option value="$PROJECT_DIR$/src/pip/lab4/orm/User.java" />
-        <option value="$PROJECT_DIR$/src/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/pip/lab4/ejb/UserEJB.java" />
+        <option value="$PROJECT_DIR$/src/pip/lab4/utils/AuthenticationUtils.java" />
         <option value="$PROJECT_DIR$/src/pip/lab4/routes/Authentication.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/pip/lab4/controller/UserRestController.java" />
+        <option value="$PROJECT_DIR$/src/META-INF/persistence.xml" />
       </list>
     </option>
   </component>
@@ -302,10 +217,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="56" />
-    <option name="y" value="-33" />
-    <option name="width" value="1401" />
-    <option name="height" value="1000" />
+    <option name="x" value="260" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="990" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -325,6 +240,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -354,28 +273,7 @@
               <item name="lab4" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="lab4" type="462c0819:PsiDirectoryNode" />
-              <item name="ejb" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lab4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lab4" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lab4" type="462c0819:PsiDirectoryNode" />
-              <item name="orm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lab4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lab4" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lab4" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lab4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lab4" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lab4" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lab4" type="b2602c69:ProjectViewProjectNode" />
@@ -392,18 +290,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PIIIIIIIIIIP" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../coursework/iad_fifa-master-8e031bc766d9587211152b9a4d48583f0d461152" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Oracle" />
@@ -413,14 +307,14 @@
     <property name="JPA.DatabaseSchemaImportDialog" value="610b35a8-3384-4776-b6af-e7d404ab6b65" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\project\java\pip\lab4\lib" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\project\java\pip\lab4\web" />
     </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="pip.lab4.orm" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\project\java\pip\lab4\web" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\project\java\pip\lab4\lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -607,12 +501,13 @@
       <workItem from="1518609959296" duration="6759000" />
       <workItem from="1518802858147" duration="3806000" />
       <workItem from="1518820610841" duration="4228000" />
-      <workItem from="1518858066042" duration="7489000" />
+      <workItem from="1518858066042" duration="8105000" />
+      <workItem from="1518900919831" duration="6965000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27123000" />
+    <option name="totallyTimeSpent" value="34704000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -635,11 +530,11 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11338583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17165354" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28503937" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18960468" sideWeight="0.25855514" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18960468" sideWeight="0.7414449" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18960468" sideWeight="0.1585903" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18960468" sideWeight="0.8414097" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -663,6 +558,80 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/pip/lab4/orm/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#867#868#0" expanded="true" />
+            <element signature="e#895#896#0" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+            <element signature="e#971#972#0" expanded="true" />
+            <element signature="e#1006#1007#0" expanded="true" />
+            <element signature="e#1037#1038#0" expanded="true" />
+            <element signature="e#1085#1086#0" expanded="true" />
+            <element signature="e#1125#1126#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pip/lab4/orm/Group.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#583#584#0" expanded="false" />
+            <element signature="e#611#612#0" expanded="false" />
+            <element signature="e#647#648#0" expanded="false" />
+            <element signature="e#679#680#0" expanded="false" />
+            <element signature="e#721#722#0" expanded="false" />
+            <element signature="e#755#756#0" expanded="false" />
+            <element signature="e#805#806#0" expanded="false" />
+            <element signature="e#847#848#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pip/lab4/ejb/UserEJB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pip/lab4/ejb/RegisterEJB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pip/lab4/utils/AuthenticationUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="54" lean-forward="false" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pip/lab4/routes/Authentication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -683,11 +652,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#178#179#0" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -695,9 +660,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="5" column="52" lean-forward="false" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -748,7 +711,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -772,11 +737,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#178#179#0" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -784,9 +745,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="5" column="52" lean-forward="false" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -843,11 +802,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#178#179#0" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -855,9 +810,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -873,11 +826,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#178#179#0" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -901,11 +850,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#178#179#0" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -927,13 +872,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/4f44645c/610b35a8-3384-4776-b6af-e7d404ab6b65/S225141.user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/610b35a8-3384-4776-b6af-e7d404ab6b65/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -942,22 +880,33 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pip/lab4/orm/UserEntity.java" />
-    <entry file="file://$PROJECT_DIR$/src/pip/lab4/utils/AuthenticationUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/pip/lab4/orm/UserPersistence.java" />
+    <entry file="file://$PROJECT_DIR$/src/pip/lab4/routes/SignUp.java" />
+    <entry file="file://$PROJECT_DIR$/src/pip/lab4/orm/Group.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="54" lean-forward="false" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
+        <state relative-caret-position="272">
+          <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#583#584#0" expanded="false" />
+            <element signature="e#611#612#0" expanded="false" />
+            <element signature="e#647#648#0" expanded="false" />
+            <element signature="e#679#680#0" expanded="false" />
+            <element signature="e#721#722#0" expanded="false" />
+            <element signature="e#755#756#0" expanded="false" />
+            <element signature="e#805#806#0" expanded="false" />
+            <element signature="e#847#848#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pip/lab4/orm/UserPersistence.java" />
-    <entry file="file://$PROJECT_DIR$/src/pip/lab4/routes/SignUp.java">
+    <entry file="file://$PROJECT_DIR$/src/pip/lab4/utils/AuthenticationUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -971,62 +920,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pip/lab4/orm/Group.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#611#612#0" expanded="true" />
-            <element signature="e#647#648#0" expanded="true" />
-            <element signature="e#679#680#0" expanded="true" />
-            <element signature="e#721#722#0" expanded="true" />
-            <element signature="e#755#756#0" expanded="true" />
-            <element signature="e#805#806#0" expanded="true" />
-            <element signature="e#847#848#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pip/lab4/routes/ApplicationConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="52" lean-forward="false" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="57" lean-forward="true" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pip/lab4/ejb/UserEJB.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-          <folding />
+          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pip/lab4/orm/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="272">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#867#868#0" expanded="true" />
@@ -1041,27 +948,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pip/lab4/routes/HelloWorldResource.java">
+    <entry file="file://$PROJECT_DIR$/src/pip/lab4/routes/ApplicationConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#178#179#0" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
-          </folding>
+          <caret line="5" column="52" lean-forward="false" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pip/lab4/routes/Authentication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        <state relative-caret-position="236">
+          <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pip/lab4/routes/HelloWorldResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="11" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pip/lab4/controller/UserRestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="26" column="35" lean-forward="true" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#161#162#0" expanded="true" />
-            <element signature="e#189#190#0" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/4f44645c/610b35a8-3384-4776-b6af-e7d404ab6b65/S225141.user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1131,7 +1073,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>org.eclipse.persistence:eclipselink:2.5.2</last-edited>
+          <last-edited>lib</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
