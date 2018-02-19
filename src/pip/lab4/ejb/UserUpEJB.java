@@ -14,7 +14,9 @@ import java.util.List;
 
 @LocalBean
 @Stateless
-public class UserEJB {
+public class UserUpEJB {
+    private EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("lab4");
+    private EntityManager entityManager;
 
     public User createUser(String login, String password){
         try {
@@ -25,11 +27,9 @@ public class UserEJB {
         }
         User user = new User(login, password);
 
-        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("lab4");
-        EntityManager entityManager = entityManagerFactory.createEntityManager();
-        EntityTransaction transaction = entityManager.getTransaction();
-
+        EntityTransaction transaction = SetEntityTransaction();
         transaction.begin();
+
         entityManager.persist(user);
         entityManager.persist(new Group(login, Group.USER_GROUP));
         transaction.commit();
@@ -37,11 +37,8 @@ public class UserEJB {
         return user;
     }
 
-    public java.util.List findUserById(String login){
-        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("lab4");
-        EntityManager entityManager = entityManagerFactory.createEntityManager();
-        EntityTransaction transaction = entityManager.getTransaction();
-
+    public java.util.List findUserById(String login){ ;
+        EntityTransaction transaction = SetEntityTransaction();
         transaction.begin();
 
         List resultList = entityManager.createNamedQuery("findUserByLogin")
@@ -51,5 +48,10 @@ public class UserEJB {
         transaction.commit();
         entityManager.close();
         return resultList;
+    }
+
+    private EntityTransaction SetEntityTransaction(){
+        EntityManager entityManager = entityManagerFactory.createEntityManager();
+        return entityManager.getTransaction();
     }
 }

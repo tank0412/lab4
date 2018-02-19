@@ -1,7 +1,5 @@
 package pip.lab4.utils;
 
-import jdk.nashorn.internal.runtime.regexp.RegExp;
-
 import javax.xml.bind.DatatypeConverter;
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;

@@ -4,9 +4,9 @@
     <root id="1"/>
     <schema id="2" parent="1" name="S225141">
       <ObjectId>2159</ObjectId>
-      <IntrospectionTimestamp>2018-02-16.23:59:22</IntrospectionTimestamp>
-      <CreatedTimestamp>2018-01-15.06:29:27</CreatedTimestamp>
-      <ModifiedTimestamp>2018-01-15.06:29:27</ModifiedTimestamp>
+      <IntrospectionTimestamp>2018-02-19.22:32:37</IntrospectionTimestamp>
+      <CreatedTimestamp>2018-02-19.22:32:36</CreatedTimestamp>
+      <ModifiedTimestamp>2018-02-19.22:32:36</ModifiedTimestamp>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -4612,37 +4612,71 @@
     <schema id="1536" parent="1" name="XS$NULL">
       <ObjectId>2147483638</ObjectId>
     </schema>
-    <table id="1537" parent="2" name="user">
-      <ObjectId>564098</ObjectId>
-      <CreatedTimestamp>2018-01-15.06:29:27</CreatedTimestamp>
-      <ModifiedTimestamp>2018-01-15.06:29:27</ModifiedTimestamp>
+    <schema id="1537" parent="1" name="S241863">
+      <ObjectId>2434</ObjectId>
+    </schema>
+    <schema id="1538" parent="1" name="S250252">
+      <ObjectId>2435</ObjectId>
+    </schema>
+    <schema id="1539" parent="1" name="S253167">
+      <ObjectId>2436</ObjectId>
+    </schema>
+    <schema id="1540" parent="1" name="S253168">
+      <ObjectId>2437</ObjectId>
+    </schema>
+    <schema id="1541" parent="1" name="S253173">
+      <ObjectId>2438</ObjectId>
+    </schema>
+    <schema id="1542" parent="1" name="S253169">
+      <ObjectId>2439</ObjectId>
+    </schema>
+    <schema id="1543" parent="1" name="S253174">
+      <ObjectId>2440</ObjectId>
+    </schema>
+    <schema id="1544" parent="1" name="S250568">
+      <ObjectId>2441</ObjectId>
+    </schema>
+    <schema id="1545" parent="1" name="S253172">
+      <ObjectId>2442</ObjectId>
+    </schema>
+    <schema id="1546" parent="1" name="S253175">
+      <ObjectId>2443</ObjectId>
+    </schema>
+    <schema id="1547" parent="1" name="S253170">
+      <ObjectId>2444</ObjectId>
+    </schema>
+    <schema id="1548" parent="1" name="S253171">
+      <ObjectId>2445</ObjectId>
+    </schema>
+    <schema id="1549" parent="1" name="S250569">
+      <ObjectId>2446</ObjectId>
+    </schema>
+    <table id="1550" parent="2" name="TEST">
+      <ObjectId>570691</ObjectId>
+      <CreatedTimestamp>2018-02-19.22:32:36</CreatedTimestamp>
+      <ModifiedTimestamp>2018-02-19.22:32:36</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <column id="1538" parent="1537" name="LOGIN">
+    <column id="1551" parent="1550" name="ID">
       <Position>1</Position>
-      <DataType>VARCHAR2(30)|0</DataType>
+      <DataType>NUMBER(*)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="1539" parent="1537" name="PASSWORD">
-      <Position>2</Position>
-      <DataType>VARCHAR2(30)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <index id="1540" parent="1537" name="SYS_C00526012">
-      <ObjectId>564099</ObjectId>
+    <index id="1552" parent="1550" name="SYS_C00532075">
+      <ObjectId>570692</ObjectId>
       <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2018-01-15.06:29:27</CreatedTimestamp>
-      <ModifiedTimestamp>2018-01-15.06:29:27</ModifiedTimestamp>
+      <CreatedTimestamp>2018-02-19.22:32:36</CreatedTimestamp>
+      <ModifiedTimestamp>2018-02-19.22:32:36</ModifiedTimestamp>
       <TablespaceName>USERS</TablespaceName>
-      <ColNames>LOGIN</ColNames>
+      <ColNames>ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="1541" parent="1537" name="SYS_C00526012">
+    <key id="1553" parent="1550" name="SYS_C00532075">
       <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2018-01-15.06:29:27</ModifiedTimestamp>
-      <ColNames>LOGIN</ColNames>
+      <ModifiedTimestamp>2018-02-19.22:32:36</ModifiedTimestamp>
+      <ColNames>ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>SYS_C00526012</UnderlyingIndexName>
+      <UnderlyingIndexName>SYS_C00532075</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
   </database-model>
