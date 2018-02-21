@@ -4,7 +4,6 @@ import pip.lab4.ejb.UserEJB;
 import pip.lab4.orm.User;
 
 import javax.ejb.EJB;
-import javax.ejb.Local;
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 import javax.ws.rs.*;
@@ -22,7 +21,15 @@ public class UserRestController {
     @GET
     @Produces("application/json")
     public User getClichedMessage() {
-        return userEJB.createUser("login1", "password1");
+        return userEJB.createUser("login", "password");
+    }
+
+    @POST
+    @Path("/signin")
+    @Produces("application/json")
+    public User signIn(@FormParam("login") String login,
+                       @FormParam("password") String password){
+        return null;
     }
 
     @POST
@@ -30,19 +37,20 @@ public class UserRestController {
     @Produces("application/json")
     //@Consumes("application/json")
     public User signUp(@FormParam("login") String login,
-                       @FormParam("password") String password) {
-//        Matcher matcher = pattern.matcher(login);
-//        if (!matcher.find()){
-//            return null;
-//        }
-//        if(!password.equals(repeatPassword)){
-//            return null;
-//        }
-//        List resultList = userEJB.findUserById(login);
-//        if (resultList.isEmpty()){
-//            return null;
-//        }
-        return new User(login, password);
+                       @FormParam("password") String password,
+                       @FormParam("password") String repeatPassword) {
+        Matcher matcher = pattern.matcher(login);
+        if (!matcher.find()){
+            return null;
+        }
+        if(!password.equals(repeatPassword)){
+            return null;
+        }
+        List resultList = userEJB.findUserById(login);
+        if (resultList.isEmpty()){
+            return null;
+        }
+        return userEJB.createUser(login, password);
     }
 
     @EJB

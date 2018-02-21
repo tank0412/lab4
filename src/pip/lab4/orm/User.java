@@ -9,6 +9,12 @@ import javax.persistence.NamedQuery;
 import java.io.Serializable;
 
 @Entity
+@NamedQueries({
+        @NamedQuery(name = "findUserByLogin", query =
+                "SELECT user FROM User user WHERE user.login = :login"),
+        @NamedQuery(name = "login", query =
+                "SELECT user FROM User user WHERE user.login = :login AND user.password = :password")
+})
 @Table(name = "Users")
 public class User implements Serializable {
     private static final long serialVersionUID = 1L;
