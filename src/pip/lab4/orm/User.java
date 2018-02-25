@@ -12,10 +12,10 @@ import java.io.Serializable;
 @NamedQueries({
         @NamedQuery(name = "findUserByLogin", query =
                 "SELECT user FROM User user WHERE user.login = :login"),
-        @NamedQuery(name = "login", query =
+        @NamedQuery(name = "signin", query =
                 "SELECT user FROM User user WHERE user.login = :login AND user.password = :password")
 })
-@Table(name = "Users")
+@Table(name = "users")
 public class User implements Serializable {
     private static final long serialVersionUID = 1L;
 

@@ -15,7 +15,6 @@ import java.util.List;
 @LocalBean
 @Stateless
 public class UserEJB {
-    private EntityManagerFactory entityManagerFactory;
     private EntityManager entityManager;
 
     public User createUser(String login, String password){
@@ -37,7 +36,7 @@ public class UserEJB {
         return user;
     }
 
-    public java.util.List findUserById(String login){ ;
+    public java.util.List findUserById(String login){
         EntityTransaction transaction = SetEntityTransaction();
         transaction.begin();
 
@@ -49,9 +48,22 @@ public class UserEJB {
         entityManager.close();
         return resultList;
     }
+    public boolean signIn(String login, String password){
+        EntityTransaction transaction = SetEntityTransaction();
+        transaction.begin();
+
+        User user = (User)entityManager.createNamedQuery("signin")
+                .setParameter("login", login)
+                .setParameter("password", password)
+                .getSingleResult();
+        if (user != null)
+            return true;
+        else
+            return false;
+    }
 
     private EntityTransaction SetEntityTransaction(){
-        entityManagerFactory = Persistence.createEntityManagerFactory("lab4");
+        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("lab4");
         entityManager = entityManagerFactory.createEntityManager();
         return entityManager.getTransaction();
     }

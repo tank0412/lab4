@@ -1,56 +1,98 @@
 package pip.lab4.controller;
 
+import com.sun.deploy.net.HttpResponse;
+import com.sun.jersey.spi.resource.Singleton;
+import oracle.jdbc.proxy.annotation.Post;
 import pip.lab4.ejb.UserEJB;
+import pip.lab4.orm.Point;
 import pip.lab4.orm.User;
 
 import javax.ejb.EJB;
 import javax.ejb.LocalBean;
-import javax.ejb.Stateless;
+import javax.ejb.Stateful;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.ws.rs.*;
-import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import javax.ws.rs.core.Context;
+import java.util.ArrayList;
 
 @LocalBean
-@Stateless
+@Singleton
 @Path("/user")
 public class UserRestController {
     private static final Pattern pattern = Pattern.compile("(?=.*[a-zA-Z])[a-zA-Z0-9]{3,}");
 
-    @Path("/helloworld")
     @GET
-    @Produces("application/json")
-    public User getClichedMessage() {
-        return userEJB.createUser("login", "password");
+    @Path("/hello")
+    public String helloWorld(){
+        return "Hello World";
     }
+
 
     @POST
     @Path("/signin")
-    @Produces("application/json")
-    public User signIn(@FormParam("login") String login,
-                       @FormParam("password") String password){
-        return null;
+    public void signIn(@FormParam("login") String login,
+                       @FormParam("password") String password,
+                       @Context HttpServletRequest httpServletRequest,
+                       @Context HttpServletResponse httpServletResponse){
+
+        boolean isTrueData = userEJB.signIn(login, password);
+        try {
+            if(isTrueData){
+                httpServletRequest.getSession().setAttribute("login", login);
+                httpServletRequest.getSession().setAttribute("dots", new ArrayList<Point>());
+                httpServletResponse.sendRedirect("lab4_war_exploded/index.html");
+            }
+            else {
+                httpServletResponse.sendRedirect("lab4_war_exploded/signin.html");
+                System.err.println("login exists or data is incorrect");
+            }
+        } catch (Exception e) {
+            System.err.println("Signin error!");
+            e.printStackTrace();
+        }
     }
 
     @POST
     @Path("/signup")
-    @Produces("application/json")
+    //@Produces("application/json")
     //@Consumes("application/json")
-    public User signUp(@FormParam("login") String login,
+    public void signUp(@FormParam("login") String login,
                        @FormParam("password") String password,
-                       @FormParam("password") String repeatPassword) {
-        Matcher matcher = pattern.matcher(login);
-        if (!matcher.find()){
-            return null;
+                       @FormParam("password") String repeatPassword,
+                       @Context HttpServletRequest httpServletRequest,
+                       @Context HttpServletResponse httpServletResponse) {
+        try{
+            Matcher matcher = pattern.matcher(login);
+            if (!matcher.find() ||
+                    !password.equals(repeatPassword) ||
+                    !userEJB.findUserById(login).isEmpty()){
+                httpServletResponse.sendRedirect("lab4_war_exploded/signup.html");
+                System.err.println("login exists or data is incorrect");
+            }
+            userEJB.createUser(login, password);
+            httpServletResponse.sendRedirect("lab4_war_exploded/regdone.html");
         }
-        if(!password.equals(repeatPassword)){
-            return null;
+        catch (Exception e)
+        {
+            System.err.println("Signup error!");
+            e.printStackTrace();
         }
-        List resultList = userEJB.findUserById(login);
-        if (resultList.isEmpty()){
-            return null;
+    }
+
+    @Post
+    @Path("/logout")
+    public void logOut(@Context HttpServletRequest httpServletRequest,
+                       @Context HttpServletResponse httpServletResponse) {
+        try {
+            httpServletRequest.getSession().invalidate();
+            httpServletResponse.sendRedirect("lab4_war_exploded/signin.html");
+        } catch (Exception e) {
+            System.err.println("Logout error!");
+            e.printStackTrace();
         }
-        return userEJB.createUser(login, password);
     }
 
     @EJB

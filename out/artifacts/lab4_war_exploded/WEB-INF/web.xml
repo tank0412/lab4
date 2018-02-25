@@ -23,4 +23,42 @@
         <url-pattern>/rest/*</url-pattern>
     </servlet-mapping>
 
+    <session-config>
+        <session-timeout>
+            300
+        </session-timeout>
+    </session-config>
+
+    <welcome-file-list>
+        <welcome-file>start.html</welcome-file>
+    </welcome-file-list>
+
+    <login-config>
+        <auth-method>FORM</auth-method>
+        <realm-name>jdbc-realm</realm-name>
+        <form-login-config>
+            <form-login-page>/signin.html</form-login-page>
+            <form-error-page>/signin.html</form-error-page>
+        </form-login-config>
+    </login-config>
+
+    <security-role>
+        <description/>
+        <role-name>users</role-name>
+    </security-role>
+
+    <security-constraint>
+        <display-name>Restricted to users</display-name>
+        <web-resource-collection>
+            <web-resource-name>Restricted Access</web-resource-name>
+            <url-pattern>/rest/user/private/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>users</role-name>
+        </auth-constraint>
+        <user-data-constraint>
+            <transport-guarantee>NONE</transport-guarantee>
+        </user-data-constraint>
+    </security-constraint>
+
 </web-app>

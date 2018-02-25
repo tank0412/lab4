@@ -10,6 +10,7 @@
         <element id="directory" name="lib">
           <element id="library" level="project" name="lib" />
           <element id="library" level="project" name="org.eclipse.persistence:eclipselink:2.5.2" />
+          <element id="library" level="project" name="org.glassfish.jersey:jax-rs-ri:2.0-rc1" />
         </element>
       </element>
     </root>

@@ -3,6 +3,7 @@ package pip.lab4.ejb;
 import org.eclipse.persistence.jpa.config.Array;
 import pip.lab4.orm.Point;
 
+import javax.annotation.security.RolesAllowed;
 import javax.ejb.LocalBean;
 import javax.ejb.Stateful;
 import javax.persistence.EntityManager;

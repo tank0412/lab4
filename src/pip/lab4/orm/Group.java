@@ -14,7 +14,7 @@ public class Group {
     @Column(name = "login", length = 255)
     private String login;
 
-    @Column(name = "groupName", length = 31)
+    @Column(name = "groupname", length = 31)
     private String groupName;
 
     public Group(){}
