@@ -20,7 +20,7 @@ public class PointEJB {
 
     public void addPoint(double x, double y, double radius){
         Point point = new Point(x, y, radius);
-        pointList.add(point);
+        //pointList.add(point);
 
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("unit");
         EntityManager entityManager = entityManagerFactory.createEntityManager();

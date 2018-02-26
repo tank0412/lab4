@@ -2,7 +2,6 @@ package pip.lab4.controller;
 
 import com.sun.deploy.net.HttpResponse;
 import com.sun.jersey.spi.resource.Singleton;
-import oracle.jdbc.proxy.annotation.Post;
 import pip.lab4.ejb.UserEJB;
 import pip.lab4.orm.Point;
 import pip.lab4.orm.User;
@@ -30,7 +29,6 @@ public class UserRestController {
         return "Hello World";
     }
 
-
     @POST
     @Path("/signin")
     public void signIn(@FormParam("login") String login,
@@ -42,11 +40,11 @@ public class UserRestController {
         try {
             if(isTrueData){
                 httpServletRequest.getSession().setAttribute("login", login);
-                httpServletRequest.getSession().setAttribute("dots", new ArrayList<Point>());
-                httpServletResponse.sendRedirect("lab4_war_exploded/index.html");
+                httpServletRequest.getSession().setAttribute("points", new ArrayList<Point>());
+                httpServletResponse.sendRedirect("/lab4_war_exploded/index.html");
             }
             else {
-                httpServletResponse.sendRedirect("lab4_war_exploded/signin.html");
+                httpServletResponse.sendRedirect("/lab4_war_exploded/signin.html");
                 System.err.println("login exists or data is incorrect");
             }
         } catch (Exception e) {
@@ -57,8 +55,6 @@ public class UserRestController {
 
     @POST
     @Path("/signup")
-    //@Produces("application/json")
-    //@Consumes("application/json")
     public void signUp(@FormParam("login") String login,
                        @FormParam("password") String password,
                        @FormParam("password") String repeatPassword,
@@ -69,11 +65,11 @@ public class UserRestController {
             if (!matcher.find() ||
                     !password.equals(repeatPassword) ||
                     !userEJB.findUserById(login).isEmpty()){
-                httpServletResponse.sendRedirect("lab4_war_exploded/signup.html");
+                httpServletResponse.sendRedirect("/lab4_war_exploded/signup.html");
                 System.err.println("login exists or data is incorrect");
             }
             userEJB.createUser(login, password);
-            httpServletResponse.sendRedirect("lab4_war_exploded/regdone.html");
+            httpServletResponse.sendRedirect("/lab4_war_exploded/regdone.html");
         }
         catch (Exception e)
         {
@@ -82,16 +78,18 @@ public class UserRestController {
         }
     }
 
-    @Post
+    @GET
     @Path("/logout")
-    public void logOut(@Context HttpServletRequest httpServletRequest,
+    public String logOut(@Context HttpServletRequest httpServletRequest,
                        @Context HttpServletResponse httpServletResponse) {
         try {
             httpServletRequest.getSession().invalidate();
-            httpServletResponse.sendRedirect("lab4_war_exploded/signin.html");
-        } catch (Exception e) {
+            httpServletResponse.sendRedirect("/lab4_war_exploded/signin.html");
+        }catch (Exception e) {
             System.err.println("Logout error!");
             e.printStackTrace();
+        }finally {
+            return "lol";
         }
     }
 

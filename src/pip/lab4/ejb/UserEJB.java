@@ -17,6 +17,7 @@ import java.util.List;
 public class UserEJB {
     private EntityManager entityManager;
 
+
     public User createUser(String login, String password){
         try {
             password = (AuthenticationUtils.encodeSHA256(password));
@@ -51,12 +52,17 @@ public class UserEJB {
     public boolean signIn(String login, String password){
         EntityTransaction transaction = SetEntityTransaction();
         transaction.begin();
+        try {
+            password = (AuthenticationUtils.encodeSHA256(password));
 
-        User user = (User)entityManager.createNamedQuery("signin")
+        } catch (Exception exception){
+            exception.printStackTrace();
+        }
+        User userInDB = (User)entityManager.createNamedQuery("signin")
                 .setParameter("login", login)
                 .setParameter("password", password)
                 .getSingleResult();
-        if (user != null)
+        if (userInDB != null)
             return true;
         else
             return false;
