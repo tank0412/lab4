@@ -10,13 +10,17 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
+import java.io.UnsupportedEncodingException;
+import java.security.NoSuchAlgorithmException;
 import java.util.List;
 
 @LocalBean
 @Stateless
 public class UserEJB {
-    private EntityManager entityManager;
 
+    public UserEJB(){}
+
+    private EntityManager entityManager;
 
     public User createUser(String login, String password){
         try {
@@ -49,23 +53,23 @@ public class UserEJB {
         entityManager.close();
         return resultList;
     }
-    public boolean signIn(String login, String password){
-        EntityTransaction transaction = SetEntityTransaction();
-        transaction.begin();
+    public boolean signIn(String login, String password) throws UnsupportedEncodingException, NoSuchAlgorithmException {
         try {
+            EntityTransaction transaction = SetEntityTransaction();
+            transaction.begin();
             password = (AuthenticationUtils.encodeSHA256(password));
 
+            User userInDB = (User)entityManager.createNamedQuery("signin")
+                    .setParameter("login", login)
+                    .setParameter("password", password)
+                    .getSingleResult();
+            if (userInDB != null)
+                return true;
+            else
+                return false;
         } catch (Exception exception){
-            exception.printStackTrace();
+            throw exception;
         }
-        User userInDB = (User)entityManager.createNamedQuery("signin")
-                .setParameter("login", login)
-                .setParameter("password", password)
-                .getSingleResult();
-        if (userInDB != null)
-            return true;
-        else
-            return false;
     }
 
     private EntityTransaction SetEntityTransaction(){

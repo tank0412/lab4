@@ -4,9 +4,9 @@
     <root id="1"/>
     <schema id="2" parent="1" name="S225141">
       <ObjectId>2159</ObjectId>
-      <IntrospectionTimestamp>2018-02-25.23:39:11</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2018-02-27.14:41:25</IntrospectionTimestamp>
       <CreatedTimestamp>2018-02-19.22:32:36</CreatedTimestamp>
-      <ModifiedTimestamp>2018-02-25.23:36:40</ModifiedTimestamp>
+      <ModifiedTimestamp>2018-02-27.14:41:12</ModifiedTimestamp>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -4651,56 +4651,137 @@
     <schema id="1549" parent="1" name="S250569">
       <ObjectId>2446</ObjectId>
     </schema>
-    <table id="1550" parent="2" name="GROUPS">
-      <ObjectId>571584</ObjectId>
-      <CreatedTimestamp>2018-02-25.23:36:40</CreatedTimestamp>
-      <ModifiedTimestamp>2018-02-25.23:36:40</ModifiedTimestamp>
+    <schema id="1550" parent="1" name="S207267">
+      <ObjectId>2447</ObjectId>
+    </schema>
+    <schema id="1551" parent="1" name="S207309">
+      <ObjectId>2448</ObjectId>
+    </schema>
+    <table id="1552" parent="2" name="GROUPS">
+      <ObjectId>571855</ObjectId>
+      <CreatedTimestamp>2018-02-27.14:41:12</CreatedTimestamp>
+      <ModifiedTimestamp>2018-02-27.14:41:12</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="1551" parent="2" name="TEST">
+    <table id="1553" parent="2" name="RESULTPOINTS">
+      <ObjectId>571851</ObjectId>
+      <CreatedTimestamp>2018-02-27.14:03:32</CreatedTimestamp>
+      <ModifiedTimestamp>2018-02-27.14:03:32</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="1554" parent="2" name="SEQUENCE">
+      <ObjectId>571844</ObjectId>
+      <CreatedTimestamp>2018-02-27.02:03:25</CreatedTimestamp>
+      <ModifiedTimestamp>2018-02-27.02:03:25</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="1555" parent="2" name="TEST">
       <ObjectId>570691</ObjectId>
       <CreatedTimestamp>2018-02-19.22:32:36</CreatedTimestamp>
       <ModifiedTimestamp>2018-02-19.22:32:36</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="1552" parent="2" name="USERS">
-      <ObjectId>571582</ObjectId>
-      <CreatedTimestamp>2018-02-25.23:36:40</CreatedTimestamp>
-      <ModifiedTimestamp>2018-02-25.23:36:40</ModifiedTimestamp>
+    <table id="1556" parent="2" name="USERS">
+      <ObjectId>571853</ObjectId>
+      <CreatedTimestamp>2018-02-27.14:41:12</CreatedTimestamp>
+      <ModifiedTimestamp>2018-02-27.14:41:12</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <column id="1553" parent="1550" name="LOGIN">
+    <column id="1557" parent="1552" name="LOGIN">
       <Position>1</Position>
       <DataType>VARCHAR2(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="1554" parent="1550" name="GROUPNAME">
+    <column id="1558" parent="1552" name="GROUPNAME">
       <Position>2</Position>
       <DataType>VARCHAR2(31)|0</DataType>
     </column>
-    <index id="1555" parent="1550" name="SYS_C00532997">
-      <ObjectId>571585</ObjectId>
+    <index id="1559" parent="1552" name="SYS_C00533132">
+      <ObjectId>571856</ObjectId>
       <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2018-02-25.23:36:40</CreatedTimestamp>
-      <ModifiedTimestamp>2018-02-25.23:36:40</ModifiedTimestamp>
+      <CreatedTimestamp>2018-02-27.14:41:12</CreatedTimestamp>
+      <ModifiedTimestamp>2018-02-27.14:41:12</ModifiedTimestamp>
       <TablespaceName>USERS</TablespaceName>
       <ColNames>LOGIN</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="1556" parent="1550" name="SYS_C00532997">
+    <key id="1560" parent="1552" name="SYS_C00533132">
       <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2018-02-25.23:36:40</ModifiedTimestamp>
+      <ModifiedTimestamp>2018-02-27.14:41:12</ModifiedTimestamp>
       <ColNames>LOGIN</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>SYS_C00532997</UnderlyingIndexName>
+      <UnderlyingIndexName>SYS_C00533132</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="1557" parent="1551" name="ID">
+    <column id="1561" parent="1553" name="ID">
+      <Position>1</Position>
+      <DataType>NUMBER(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="1562" parent="1553" name="RADIUS">
+      <Position>2</Position>
+      <DataType>NUMBER(19,4)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="1563" parent="1553" name="X">
+      <Position>3</Position>
+      <DataType>NUMBER(19,4)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="1564" parent="1553" name="Y">
+      <Position>4</Position>
+      <DataType>NUMBER(19,4)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="1565" parent="1553" name="SYS_C00533127">
+      <ObjectId>571852</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-02-27.14:03:32</CreatedTimestamp>
+      <ModifiedTimestamp>2018-02-27.14:03:32</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="1566" parent="1553" name="SYS_C00533127">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-02-27.14:03:32</ModifiedTimestamp>
+      <ColNames>ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C00533127</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="1567" parent="1554" name="SEQ_NAME">
+      <Position>1</Position>
+      <DataType>VARCHAR2(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="1568" parent="1554" name="SEQ_COUNT">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <index id="1569" parent="1554" name="SYS_C00533117">
+      <ObjectId>571845</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-02-27.02:03:25</CreatedTimestamp>
+      <ModifiedTimestamp>2018-02-27.02:03:25</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>SEQ_NAME</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="1570" parent="1554" name="SYS_C00533117">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-02-27.02:03:25</ModifiedTimestamp>
+      <ColNames>SEQ_NAME</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C00533117</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="1571" parent="1555" name="ID">
       <Position>1</Position>
       <DataType>NUMBER(*)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="1558" parent="1551" name="SYS_C00532075">
+    <index id="1572" parent="1555" name="SYS_C00532075">
       <ObjectId>570692</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2018-02-19.22:32:36</CreatedTimestamp>
@@ -4709,7 +4790,7 @@
       <ColNames>ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="1559" parent="1551" name="SYS_C00532075">
+    <key id="1573" parent="1555" name="SYS_C00532075">
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2018-02-19.22:32:36</ModifiedTimestamp>
       <ColNames>ID</ColNames>
@@ -4717,31 +4798,31 @@
       <UnderlyingIndexName>SYS_C00532075</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="1560" parent="1552" name="LOGIN">
+    <column id="1574" parent="1556" name="LOGIN">
       <Position>1</Position>
       <DataType>VARCHAR2(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="1561" parent="1552" name="PASSWORD">
+    <column id="1575" parent="1556" name="PASSWORD">
       <Position>2</Position>
       <DataType>VARCHAR2(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="1562" parent="1552" name="SYS_C00532995">
-      <ObjectId>571583</ObjectId>
+    <index id="1576" parent="1556" name="SYS_C00533130">
+      <ObjectId>571854</ObjectId>
       <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2018-02-25.23:36:40</CreatedTimestamp>
-      <ModifiedTimestamp>2018-02-25.23:36:40</ModifiedTimestamp>
+      <CreatedTimestamp>2018-02-27.14:41:12</CreatedTimestamp>
+      <ModifiedTimestamp>2018-02-27.14:41:12</ModifiedTimestamp>
       <TablespaceName>USERS</TablespaceName>
       <ColNames>LOGIN</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="1563" parent="1552" name="SYS_C00532995">
+    <key id="1577" parent="1556" name="SYS_C00533130">
       <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2018-02-25.23:36:40</ModifiedTimestamp>
+      <ModifiedTimestamp>2018-02-27.14:41:12</ModifiedTimestamp>
       <ColNames>LOGIN</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>SYS_C00532995</UnderlyingIndexName>
+      <UnderlyingIndexName>SYS_C00533130</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
   </database-model>
