@@ -1,0 +1,5 @@
+# production
+/out
+
+# bundle
+/web/frontend/public/build

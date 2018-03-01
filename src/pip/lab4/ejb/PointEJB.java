@@ -15,12 +15,10 @@ import java.util.List;
 @LocalBean
 @Stateful
 public class PointEJB {
-    private List<Point> pointList = new ArrayList<Point>();
 
-    public void addPoint(double x, double y, double radius){
-        Point point = new Point(x, y, radius);
-        //pointList.add(point);
+    public PointEJB(){}
 
+    public void addPoint(Point point){
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("lab4");
         EntityManager entityManager = entityManagerFactory.createEntityManager();
         EntityTransaction transaction = entityManager.getTransaction();
@@ -29,13 +27,5 @@ public class PointEJB {
         entityManager.persist(point);
         transaction.commit();
         entityManager.close();
-    }
-
-    public List<Point> getPointList() {
-        return pointList;
-    }
-
-    public void setPointList(List<Point> pointList) {
-        this.pointList = pointList;
     }
 }

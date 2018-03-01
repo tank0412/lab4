@@ -1,12 +1,9 @@
 package pip.lab4.controller;
 
 import com.sun.jersey.spi.inject.Inject;
-import com.sun.jersey.spi.resource.Singleton;
 import pip.lab4.ejb.UserEJB;
 import pip.lab4.orm.Point;
-import pip.lab4.orm.User;
 
-import javax.ejb.EJB;
 import javax.ejb.LocalBean;
 import javax.ejb.Stateful;
 import javax.servlet.http.HttpServletRequest;
@@ -27,12 +24,6 @@ public class UserRestController {
     @Inject
     private UserEJB userEJB;
 
-    @GET
-    @Path("/hello")
-    public String helloWorld(){
-        return "Hello World";
-    }
-
     @POST
     @Path("/signin")
     public void signIn(@FormParam("login") String login,
@@ -44,7 +35,7 @@ public class UserRestController {
             if(isTrueData){
                 httpServletRequest.getSession().setAttribute("login", login);
                 httpServletRequest.getSession().setAttribute("points", new ArrayList<Point>());
-                httpServletResponse.sendRedirect("/lab4/index.html");
+                httpServletResponse.sendRedirect("/lab4/frontend/public/index.html");
             }
             else {
                 httpServletResponse.sendRedirect("/lab4/signin.html");
@@ -64,7 +55,7 @@ public class UserRestController {
                        @FormParam("password") String password,
                        @FormParam("repeatPassword") String repeatPassword,
                        @Context HttpServletRequest httpServletRequest,
-                       @Context HttpServletResponse httpServletResponse){
+                       @Context HttpServletResponse httpServletResponse) throws IOException {
         try{
             Matcher matcher = pattern.matcher(login);
             if (!matcher.find()
@@ -80,6 +71,7 @@ public class UserRestController {
         {
             System.err.println("Signup error!");
             e.printStackTrace();
+            httpServletResponse.sendRedirect("/lab4/signup.html");
         }
     }
 
@@ -90,13 +82,12 @@ public class UserRestController {
         try {
             httpServletRequest.getSession().invalidate();
             httpServletResponse.sendRedirect("/lab4/signin.html");
+            return "ok";
         }
         catch (Exception e) {
             System.err.println("Logout error!");
             e.printStackTrace();
-        }
-        finally {
-            return "ok";
+            return "error";
         }
     }
 }
