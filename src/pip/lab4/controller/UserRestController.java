@@ -3,7 +3,6 @@ package pip.lab4.controller;
 import com.sun.jersey.spi.inject.Inject;
 import pip.lab4.ejb.UserEJB;
 import pip.lab4.orm.Point;
-
 import javax.ejb.LocalBean;
 import javax.ejb.Stateful;
 import javax.servlet.http.HttpServletRequest;
@@ -60,7 +59,8 @@ public class UserRestController {
             Matcher matcher = pattern.matcher(login);
             if (!matcher.find()
                     || !password.equals(repeatPassword)
-                    || !userEJB.findUserById(login).isEmpty()){
+                    || !userEJB.findUserById(login).isEmpty()
+                    || password.length() < 5){
                 httpServletResponse.sendRedirect("/lab4/signup.html");
                 System.err.println("login exists or data is incorrect");
             }
@@ -75,19 +75,16 @@ public class UserRestController {
         }
     }
 
-    @GET
+    @POST
     @Path("/logout")
-    public String logOut(@Context HttpServletRequest httpServletRequest,
+    public void logOut(@Context HttpServletRequest httpServletRequest,
                        @Context HttpServletResponse httpServletResponse) {
         try {
             httpServletRequest.getSession().invalidate();
             httpServletResponse.sendRedirect("/lab4/signin.html");
-            return "ok";
         }
         catch (Exception e) {
-            System.err.println("Logout error!");
             e.printStackTrace();
-            return "error";
         }
     }
 }

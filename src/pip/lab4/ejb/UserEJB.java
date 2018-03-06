@@ -6,7 +6,6 @@ import pip.lab4.utils.AuthenticationUtils;
 
 import javax.ejb.LocalBean;
 import javax.ejb.Stateful;
-import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
