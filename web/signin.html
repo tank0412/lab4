@@ -3,6 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>ПИП 4</title>
+    <script>
+        window.onload = function () {
+            let info = document.URL+"";
+            if (info.indexOf("error")+1){
+                alert("Логин или пароль не верны");
+            }
+        }
+    </script>
 </head>
 <body>
 <div id="loginPageWrapper">

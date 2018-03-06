@@ -3,6 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>ПИП 4</title>
+    <script>
+        window.onload = function () {
+            let info = document.URL+"";
+            if (info.indexOf("login")+1){
+                if(info.indexOf("incorrect")+1)
+                    alert("Логин должен содеражить не менее 3 символов");
+                else
+                    alert("Пользователь с таким логином уже существует");
+            }
+            else if(info.indexOf("password")+1){
+                if(info.indexOf("incorrect")+1)
+                    alert("Пароли не совпадают");
+                else
+                    alert("Пароль должен содредать не менее пяти символов");
+            }
+        }
+    </script>
 </head>
 <body>
 <div id="loginPageWrapper">
