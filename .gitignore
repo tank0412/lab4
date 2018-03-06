@@ -1,6 +1,11 @@
-# production
+# build
 /out
 
-# bundle
+# static content
 /web/frontend/public/build
+
+# node_modules
 /web/frontend/node_modules
+
+#package-lock
+/web/frontend/package-lock.json
