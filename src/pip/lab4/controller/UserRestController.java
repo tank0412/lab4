@@ -8,14 +8,10 @@ import javax.ejb.Stateful;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.ws.rs.*;
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import javax.ws.rs.core.Context;
-import javax.ws.rs.core.MediaType;
 import java.util.ArrayList;
 import java.lang.String;
 
@@ -27,14 +23,6 @@ public class UserRestController {
 
     @Inject
     private UserEJB userEJB;
-
-//    @Path("/lol")
-//    @GET
-//    @Produces({MediaType.TEXT_HTML})
-//    public InputStream viewMain(){
-//        File file;
-//        return
-//    }
 
     @POST
     @Path("/signin")

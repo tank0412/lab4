@@ -2,7 +2,6 @@ package pip.lab4.controller;
 
 import com.sun.jersey.spi.inject.Inject;
 import pip.lab4.ejb.PointEJB;
-import pip.lab4.ejb.UserEJB;
 import pip.lab4.orm.Point;
 import javax.ejb.LocalBean;
 import javax.ejb.Stateful;
@@ -82,8 +81,8 @@ public class PointRestController {
             List<Point> list = (List<Point>)httpServletRequest.getSession().getAttribute("points");
             list.add(point);
 
-        } catch (IOException e) {
-            httpServletResponse.sendRedirect("/lab4/frontend/public/index.html");
+        } catch (Exception e) {
+            httpServletResponse.sendRedirect("/lab4/signin.html");
         }
     }
 

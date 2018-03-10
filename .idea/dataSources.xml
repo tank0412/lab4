@@ -11,11 +11,5 @@
         <property name="v$session.program" value="DataGrip" />
       </driver-properties>
     </data-source>
-    <data-source source="LOCAL" name="postgres@pg" uuid="3b671488-18e4-47d1-8209-58cea88c5212">
-      <driver-ref>postgresql</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://pg:5432/postgres</jdbc-url>
-    </data-source>
   </component>
 </project>

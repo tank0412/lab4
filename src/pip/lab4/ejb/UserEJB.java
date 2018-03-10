@@ -3,7 +3,6 @@ package pip.lab4.ejb;
 import pip.lab4.orm.Group;
 import pip.lab4.orm.User;
 import pip.lab4.utils.AuthenticationUtils;
-
 import javax.ejb.LocalBean;
 import javax.ejb.Stateful;
 import javax.persistence.EntityManager;
@@ -53,6 +52,7 @@ public class UserEJB {
         entityManager.close();
         return resultList;
     }
+
     public boolean signIn(String login, String password) throws UnsupportedEncodingException, NoSuchAlgorithmException {
         try {
             EntityTransaction transaction = SetEntityTransaction();

@@ -44,10 +44,6 @@ class App extends React.Component{
     }
 
     onCreate(newPoint) {
-        // document.getElementById("xHidden").value = newPoint.x;
-        // document.getElementById("yHidden").value = newPoint.y;
-        // document.getElementById("radiusHidden").value = newPoint.r;
-        // document.getElementById("submitHidden").click();
         axios.post(urlSendPoint, newPoint).then(() => {
             return new Promise((resolve, reject) => {
                 resolve();
@@ -108,36 +104,15 @@ class App extends React.Component{
                     <Row className="show-grid">
                         <Col xs={12} sm={12} md={12} lg={12}>
                             <Button onClick={() =>  {
-                                //document.getElementById("submitHidden").click();
                                 this.logout();
-                                //document.location = urlLogout;
                             }}>Выйти</Button>
                         </Col>
                     </Row>
                 </Grid>
-                <form method="POST" action="/lab4/rest/user/logout/" hidden="true">
-                    <button type="submit" id="submitHidden"/>
-                </form>
             </div>
         );
     }
 }
-
-// $(function () {
-//     $('form').submit(function (e) {
-//         let $form = $(this);
-//         $.ajax({
-//             type: $form.attr('method'),
-//             url: $form.attr('action'),
-//             data: $form.serialize()
-//         }).done(function () {
-//             console.log('success');
-//         }).fail(function () {
-//             console.log('fail');
-//         });
-//         e.preventDefault();
-//     });
-// });
 
 function mapStateToProps(state) {
     return {
