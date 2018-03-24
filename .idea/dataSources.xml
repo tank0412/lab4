@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="@helios" uuid="610b35a8-3384-4776-b6af-e7d404ab6b65">
+    <data-source source="LOCAL" name="@localhost" uuid="e0965f7e-b059-41b6-847f-4b2ff938ddc2">
       <driver-ref>oracle</driver-ref>
       <synchronize>true</synchronize>
       <auto-commit>false</auto-commit>
       <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
-      <jdbc-url>jdbc:oracle:thin:@helios:1521:orbis</jdbc-url>
+      <jdbc-url>jdbc:oracle:thin:@localhost:1521:orcl2</jdbc-url>
       <driver-properties>
         <property name="v$session.program" value="DataGrip" />
       </driver-properties>

@@ -57,6 +57,7 @@ public class UserRestController {
                        @Context HttpServletRequest httpServletRequest,
                        @Context HttpServletResponse httpServletResponse) throws IOException {
         try{
+            System.err.println("FUCK");
             Matcher matcher = pattern.matcher(login);
             if (!matcher.find()|| login.length()<3){
                 httpServletResponse.sendRedirect("/lab4/signup.html?login=incorrect");

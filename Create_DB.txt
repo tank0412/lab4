@@ -1,0 +1,37 @@
+create table GROUPS
+(
+	LOGIN VARCHAR2(255) not null
+		primary key,
+	GROUPNAME VARCHAR2(31)
+)
+/
+
+create table POINT
+(
+	ID NUMBER(10) not null
+		primary key,
+	INSIDE NUMBER(1) default 0 not null,
+	R NUMBER(19,4) not null,
+	X NUMBER(19,4) not null,
+	Y NUMBER(19,4) not null
+)
+/
+
+create table SEQUENCE
+(
+	SEQ_NAME VARCHAR2(50) not null
+		primary key,
+	SEQ_COUNT NUMBER
+)
+/
+create table USERS
+(
+	LOGIN VARCHAR2(255) not null
+		primary key,
+	PASSWORD VARCHAR2(255) not null
+)
+/
+
+
+
+
