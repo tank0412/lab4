@@ -104,11 +104,16 @@ class App extends React.Component{
                     <Row className="show-grid">
                         <Col xs={12} sm={12} md={12} lg={12}>
                             <Button onClick={() =>  {
+                                //document.getElementById("submitHidden").click();
                                 this.logout();
+                                //document.location = urlLogout;
                             }}>Выйти</Button>
                         </Col>
                     </Row>
                 </Grid>
+                <form method="POST" action="/lab4/rest/user/logout/" hidden="true">
+                    <button type="submit" id="submitHidden"/>
+                </form>
             </div>
         );
     }
