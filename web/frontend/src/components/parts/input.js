@@ -25,15 +25,26 @@ class Input extends React.Component{
         e.preventDefault();
     }
     handleChange(event) {
-        this.setState({value: event.target.value});
+        var e = document.getElementById("SelectX");
+        var strUser = e.options[e.selectedIndex].value;
+        //alert(strUser);
+        this.setState({value: strUser});
+        //alert(parseInt(strUser));
+        this.props.changeX(parseInt(strUser));
     }
     handleChange2(event) {
-        this.setState({value2: event.target.value});
+        var strUser = document.getElementById("SelectY").value;
+        this.setState({value2: strUser});
+        this.props.changeY(parseFloat(strUser));
     }
     handleChange3(event) {
-        this.setState({value3: event.target.value});
-        alert(parseInt(this.state.value3));
-        this.props.changeR(parseInt(this.state.value3));
+        var e = document.getElementById("SelectRadius");
+        var strUser = e.options[e.selectedIndex].value;
+        //alert(strUser);
+        this.setState({value3: strUser});
+        //alert(parseInt(strUser));
+        this.props.changeR(parseInt(strUser));
+
     }
 
     render() {
@@ -48,7 +59,7 @@ class Input extends React.Component{
                 <label>
                     <div id="divX">
                         <label>Значение X</label><br/>
-                        <select value={this.state.value} onChange={this.handleChange}>
+                        <select id="SelectX" value={this.state.value} onChange={this.handleChange}>
                             <option value='-5'>-5</option>
                             <option value='-4'>-4</option>
                             <option value='-3'>-3</option>
@@ -63,12 +74,12 @@ class Input extends React.Component{
                     <br/>
                     <div id="divY">
                         <label>Значение Y</label><br/>
-                        <input type="text" value={this.state.value2} onChange={this.handleChange2} />
+                        <input type="text" id="SelectY" value={this.state.value2} onChange={this.handleChange2} />
                     </div>,
                     <br/>
                     <div id="divR">
                         <label>Значение R</label><br/>
-                        <select value={this.state.value3} onChange={this.handleChange3}>
+                        <select id="SelectRadius" value={this.state.value3} onChange={this.handleChange3}>
                             <option value='1'>1</option>
                             <option value='2'>2</option>
                             <option value='3'>3</option>
@@ -78,9 +89,10 @@ class Input extends React.Component{
                 </label>
                 <input type="submit" value="Проверить" onClick=
                     {  (e) => {
+                        this.props.changeX(parseInt(this.state.value));
+                        this.props.changeY(parseFloat(this.state.value2));
                         this.handleSubmit(e);
-                        this.props.changeX(this.state.value);
-                        this.props.changeY(this.state.value2);
+                        //alert(parseInt(this.state.value));
                         let inside = this.props.check(this.props.storeX,this.props.storeY,this.props.storeR);
                         this.props.handleClick(this.props.storeX,this.props.storeY,this.props.storeR,inside);
                     }
