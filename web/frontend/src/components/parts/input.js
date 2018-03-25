@@ -10,19 +10,30 @@ class Input extends React.Component{
         super(props);
         //this.handleChangeR = this.handleChangeR.bind(this);
         //this.handleChangeX = this.handleChangeX.bind(this);
+        this.state = {value: '0'};
+        this.state = {value2: ''};
+        this.state = {value3: '0'};
+
+        this.handleChange = this.handleChange.bind(this);
+        this.handleChange2 = this.handleChange2.bind(this);
+        this.handleChange3 = this.handleChange3.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
 
     handleSubmit(e) {
         e.preventDefault();
     }
-
-    handleChangeX(value){
-        this.props.changeX(value);
+    handleChange(event) {
+        this.setState({value: event.target.value});
     }
-
-    handleChangeR(value){
-        this.props.changeR(value);
+    handleChange2(event) {
+        this.setState({value2: event.target.value});
+    }
+    handleChange3(event) {
+        this.setState({value3: event.target.value});
+        alert(parseInt(this.state.value3));
+        this.props.changeR(parseInt(this.state.value3));
     }
 
     render() {
@@ -33,6 +44,50 @@ class Input extends React.Component{
         newPoint['inside'] = this.props.inside;
 
         let inputs = [
+            <form onSubmit={this.handleSubmit}>
+                <label>
+                    <div id="divX">
+                        <label>Значение X</label><br/>
+                        <select value={this.state.value} onChange={this.handleChange}>
+                            <option value='-5'>-5</option>
+                            <option value='-4'>-4</option>
+                            <option value='-3'>-3</option>
+                            <option value='-2'>-2</option>
+                            <option value='-1'>-1</option>
+                            <option value='0'>0</option>
+                            <option value='1'>1</option>
+                            <option value='2'>2</option>
+                            <option value='3'>3</option>
+                        </select>
+                    </div>,
+                    <br/>
+                    <div id="divY">
+                        <label>Значение Y</label><br/>
+                        <input type="text" value={this.state.value2} onChange={this.handleChange2} />
+                    </div>,
+                    <br/>
+                    <div id="divR">
+                        <label>Значение R</label><br/>
+                        <select value={this.state.value3} onChange={this.handleChange3}>
+                            <option value='1'>1</option>
+                            <option value='2'>2</option>
+                            <option value='3'>3</option>
+                        </select>
+                    </div>,
+                    <br/>
+                </label>
+                <input type="submit" value="Проверить" onClick=
+                    {  (e) => {
+                        this.handleSubmit(e);
+                        this.props.changeX(this.state.value);
+                        this.props.changeY(this.state.value2);
+                        let inside = this.props.check(this.props.storeX,this.props.storeY,this.props.storeR);
+                        this.props.handleClick(this.props.storeX,this.props.storeY,this.props.storeR,inside);
+                    }
+                    } />
+            </form>
+        ];
+            /*
             <div id="divX">
                 <label>Значение X</label><br/>
                 <label>-5</label><input name="checkboxX" type="radio" value="-5" onClick={() => this.props.changeX(-5)}/>
@@ -73,7 +128,7 @@ class Input extends React.Component{
                 }
                 }>Проверить</Button>,
         ];
-
+*/
         return (
             <form>
                 {inputs}
