@@ -92,7 +92,7 @@ class Graph extends React.Component {
         //Отрисовка фигуры
         ctx.fillStyle = '#6A5ACD';
 
-        ctx.fillRect(size - radius, size, radius, radius);
+        ctx.fillRect(size-radius/2 , size, radius/2, radius);
 
         ctx.beginPath();
         ctx.moveTo(size - radius, size);
@@ -101,7 +101,7 @@ class Graph extends React.Component {
         ctx.lineTo(size - radius, size);
         ctx.fill();
 
-        ctx.arc(size, size, radius/2, 0, Math.PI/2, false);
+        ctx.arc(size, size, radius/2, 0, 1.5*Math.PI, true); // круг
         ctx.fill();
 
         //Отрисовка осей
@@ -117,23 +117,23 @@ class Graph extends React.Component {
 
     render() {
         return (
-           <div>
-               <canvas id="canvas" onClick={(event) => {
-                   if(this.props.storeR === 0) {
-                       alert("Выберите радиус");
-                       return;
-                   }
-                   let arr = this.getCursorPosition(event);
-                   let inside = this.check(arr['x'], arr['y'], this.props.storeR);
-                   this.drawAPoint(arr['x'],arr['y'],this.props.storeR, inside);
-                   this.handleClickInGraph(arr['x'], arr['y'], this.props.storeR, inside);
+            <div>
+                <canvas id="canvas" onClick={(event) => {
+                    if(this.props.storeR === 0) {
+                        alert("Выберите радиус");
+                        return;
+                    }
+                    let arr = this.getCursorPosition(event);
+                    let inside = this.check(arr['x'], arr['y'], this.props.storeR);
+                    this.drawAPoint(arr['x'],arr['y'],this.props.storeR, inside);
+                    this.handleClickInGraph(arr['x'], arr['y'], this.props.storeR, inside);
 
-               }} ref="canvas" width={300} height={300}/>
+                }} ref="canvas" width={300} height={300}/>
 
-               <Input check={this.check} handleClick={ (x,y,r,inside) => {
-                   this.drawAPoint(x,y,r,inside);
-                   this.handleClickInGraph(x,y,r,inside); }} />
-           </div>
+                <Input check={this.check} handleClick={ (x,y,r,inside) => {
+                    this.drawAPoint(x,y,r,inside);
+                    this.handleClickInGraph(x,y,r,inside); }} />
+            </div>
         );
     }
 }
@@ -149,11 +149,11 @@ function mapStateToProps(state) {
 
 function matchDispatchToProps(dispatch) {
     return bindActionCreators({
-            changeX: changeX,
-            changeY: changeY,
-            changeR: changeR,
-            change: change,
-        }, dispatch)
+        changeX: changeX,
+        changeY: changeY,
+        changeR: changeR,
+        change: change,
+    }, dispatch)
 }
 
 export default connect(mapStateToProps, matchDispatchToProps)(Graph);
