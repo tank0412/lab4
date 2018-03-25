@@ -35,9 +35,9 @@ class Graph extends React.Component {
     }
 
     check(x,y,radius) {
-        return (x <= 0 && x >= radius*(-1) && y >= radius*(-1) && y <= (x+radius)/2)
-            || (x>=0 && y<=0 && (x*x + y*y) <= radius*radius/4)
-    }
+        return (x <= 0 && y <= 0 && x >= radius*(-1) / 2 && y >= radius*(-1))
+            || (x>=0 && y>=0 && (x*x + y*y) <= radius*radius/4) || (x <= 0 && y >=0 && x >= radius*(-1) && y <=radius / 2 && y <= (x+radius)/2 )
+}
 
     drawPoints(r) {
         let pointArray = this.array;
