@@ -9,8 +9,26 @@ class Graph extends React.Component {
         super(props);
         this.array = props.points;
         this.handleClickInGraph = this.props.handleClick;
+        this.state = {value4: ''}
+        this.handleChange4 = this.handleChange4.bind(this);
     }
+    handleChange4(event) {
+        var e = document.getElementById("SelectMenu");
+        var strUser = e.options[e.selectedIndex].value;
+        if (strUser = '1')
+        //document.getElementsByName("RegisterLink").click();
+            window.location="/signin.html";
+        if (strUser = '2')
+            //document.getElementsByName("LoginLink").click();
+            window.location="/signup.html";
+        if (strUser = '3')
+            document.getElementById("submitLogout").click();
 
+
+        //alert(strUser);
+        this.setState({value4: strUser});
+        //alert(parseInt(strUser));
+    }
     componentDidMount() {
         this.updateCanvas(this.props.storeR);
         this.drawPoints(this.props.storeR)
@@ -118,6 +136,14 @@ class Graph extends React.Component {
     render() {
         return (
             <div>
+                <div id="divMenu">
+                    <select id="SelectMenu" value={this.state.value4} onChange={this.handleChange4}>
+                        <option value='0'></option>
+                        <option value='1'>Login</option>
+                        <option value='2'>Register</option>
+                        <option value='3'>Logout</option>
+                    </select>
+                </div>,
                 <canvas id="canvas" onClick={(event) => {
                     if(this.props.storeR === 0) {
                         alert("Выберите радиус");
@@ -133,6 +159,9 @@ class Graph extends React.Component {
                 <Input check={this.check} handleClick={ (x,y,r,inside) => {
                     this.drawAPoint(x,y,r,inside);
                     this.handleClickInGraph(x,y,r,inside); }} />
+                <form method="POST" action="/lab4/rest/user/logout/" hidden="true">
+                    <button type="submit" id="submitLogout"/>
+                </form>
             </div>
         );
     }
