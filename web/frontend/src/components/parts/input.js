@@ -34,6 +34,10 @@ class Input extends React.Component{
     }
     handleChange2(event) {
         var strUser = document.getElementById("SelectY").value;
+        if(parseInt(strUser) <= -3 || parseInt(strUser) >= 5) {
+            alert("Y должен быть от -3 до 5!");
+            return;
+        }
         this.setState({value2: strUser});
         this.props.changeY(parseFloat(strUser));
     }
